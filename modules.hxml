@@ -1,0 +1,18 @@
+
+--class-path src-externs
+-cp src
+--dce full
+--debug
+
+--each
+
+modules.Module1
+-js build/html5/modules/module1.js
+
+--next
+modules.Module2
+-js build/html5/modules/module2.js
+
+
+
+

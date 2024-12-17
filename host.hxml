@@ -1,0 +1,20 @@
+-cp src
+-main Host
+
+-lib haxeui-core
+-lib haxeui-html5
+-lib haxeui-modular
+
+-js build/html5/Host.js
+
+--dce full
+--debug
+
+#--macro include('haxe.ui.components')
+#--macro include('haxe.ui.containers')
+#--macro include('haxe.ui.containers.dialogs')
+#--macro include('haxe.ui.containers.menus')
+#--macro include('haxe.ui.containers.properties')
+-D haxeui_expose_all
+-D modular_host
+
